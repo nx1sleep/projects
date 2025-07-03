@@ -20,37 +20,52 @@ local infjump = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local noclip = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local fly = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
 local UIGradient_2 = Instance.new("UIGradient")
 local Visuals = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local Frame_2 = Instance.new("Frame")
 local UIGradient_3 = Instance.new("UIGradient")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local Button_2 = Instance.new("Folder")
 local esp = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
-local ScreenResolution = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
-local WalkESP = Instance.new("TextButton")
+local ScreenResolution = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
+local WalkESP = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local XRay = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
 local UIGradient_4 = Instance.new("UIGradient")
 local Combat = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 local Frame_3 = Instance.new("Frame")
 local UIGradient_5 = Instance.new("UIGradient")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
 local ImageLabel_3 = Instance.new("ImageLabel")
 local Button_3 = Instance.new("Folder")
 local HitboxExpander = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 local TriggerBot = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
 local UIGradient_6 = Instance.new("UIGradient")
 local TextLabel_4 = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
+local troll = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local Frame_4 = Instance.new("Frame")
+local UIGradient_7 = Instance.new("UIGradient")
+local UICorner_19 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local Button_4 = Instance.new("Folder")
+local Fling = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local UIGradient_8 = Instance.new("UIGradient")
 
 --Properties:
 
@@ -67,7 +82,6 @@ LocalPlayer.BorderColor3 = Color3.fromRGB(0, 0, 0)
 LocalPlayer.BorderSizePixel = 0
 LocalPlayer.Position = UDim2.new(-0.000610276649, 0, -0.000121832825, 0)
 LocalPlayer.Size = UDim2.new(0, 189, 0, 460)
-LocalPlayer.Visible = false
 
 UICorner.Parent = LocalPlayer
 
@@ -169,6 +183,21 @@ noclip.TextSize = 14.000
 
 UICorner_6.Parent = noclip
 
+fly.Name = "fly"
+fly.Parent = Button
+fly.BackgroundColor3 = Color3.fromRGB(42, 41, 94)
+fly.BackgroundTransparency = 0.700
+fly.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fly.BorderSizePixel = 0
+fly.Position = UDim2.new(-0.0158730168, 0, 0.358695656, 0)
+fly.Size = UDim2.new(0, 190, 0, 31)
+fly.Font = Enum.Font.GothamMedium
+fly.Text = "Fly"
+fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+fly.TextSize = 14.000
+
+UICorner_7.Parent = fly
+
 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(135, 147, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(19, 19, 103))}
 UIGradient_2.Rotation = -110
 UIGradient_2.Parent = LocalPlayer
@@ -179,11 +208,10 @@ Visuals.BackgroundColor3 = Color3.fromRGB(26, 27, 48)
 Visuals.BackgroundTransparency = 0.100
 Visuals.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Visuals.BorderSizePixel = 0
-Visuals.Position = UDim2.new(0.259512424, 0, 0.00182369247, 0)
+Visuals.Position = UDim2.new(0.239880517, 0, -0.000121832825, 0)
 Visuals.Size = UDim2.new(0, 189, 0, 460)
-Visuals.Visible = false
 
-UICorner_7.Parent = Visuals
+UICorner_8.Parent = Visuals
 
 Frame_2.Parent = Visuals
 Frame_2.BackgroundColor3 = Color3.fromRGB(13, 12, 29)
@@ -197,7 +225,7 @@ UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fr
 UIGradient_3.Rotation = 90
 UIGradient_3.Parent = Frame_2
 
-UICorner_8.Parent = Frame_2
+UICorner_9.Parent = Frame_2
 
 TextLabel_2.Parent = Frame_2
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -236,7 +264,7 @@ esp.Text = "ESP"
 esp.TextColor3 = Color3.fromRGB(255, 255, 255)
 esp.TextSize = 14.000
 
-UICorner_9.Parent = esp
+UICorner_10.Parent = esp
 
 ScreenResolution.Name = "Screen Resolution"
 ScreenResolution.Parent = Button_2
@@ -251,7 +279,7 @@ ScreenResolution.Text = "Screen Resolution"
 ScreenResolution.TextColor3 = Color3.fromRGB(255, 255, 255)
 ScreenResolution.TextSize = 14.000
 
-UICorner_10.Parent = ScreenResolution
+UICorner_11.Parent = ScreenResolution
 
 WalkESP.Name = "WalkESP"
 WalkESP.Parent = Button_2
@@ -262,11 +290,26 @@ WalkESP.BorderSizePixel = 0
 WalkESP.Position = UDim2.new(-0.00529100513, 0, 0.221739128, 0)
 WalkESP.Size = UDim2.new(0, 188, 0, 31)
 WalkESP.Font = Enum.Font.GothamMedium
-WalkESP.Text = "Walk EPS"
+WalkESP.Text = "Walk ESP"
 WalkESP.TextColor3 = Color3.fromRGB(255, 255, 255)
 WalkESP.TextSize = 14.000
 
-UICorner_11.Parent = WalkESP
+UICorner_12.Parent = WalkESP
+
+XRay.Name = "XRay"
+XRay.Parent = Button_2
+XRay.BackgroundColor3 = Color3.fromRGB(42, 41, 94)
+XRay.BackgroundTransparency = 0.700
+XRay.BorderColor3 = Color3.fromRGB(0, 0, 0)
+XRay.BorderSizePixel = 0
+XRay.Position = UDim2.new(0, 0, 0.289130449, 0)
+XRay.Size = UDim2.new(0, 188, 0, 31)
+XRay.Font = Enum.Font.GothamMedium
+XRay.Text = "XRay"
+XRay.TextColor3 = Color3.fromRGB(255, 255, 255)
+XRay.TextSize = 14.000
+
+UICorner_13.Parent = XRay
 
 UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(135, 147, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(19, 19, 103))}
 UIGradient_4.Rotation = -110
@@ -278,11 +321,10 @@ Combat.BackgroundColor3 = Color3.fromRGB(26, 27, 48)
 Combat.BackgroundTransparency = 0.100
 Combat.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Combat.BorderSizePixel = 0
-Combat.Position = UDim2.new(0.528223991, 0, 0.00182369247, 0)
+Combat.Position = UDim2.new(0.480371237, 0, -0.000121832825, 0)
 Combat.Size = UDim2.new(0, 189, 0, 460)
-Combat.Visible = false
 
-UICorner_12.Parent = Combat
+UICorner_14.Parent = Combat
 
 Frame_3.Parent = Combat
 Frame_3.BackgroundColor3 = Color3.fromRGB(13, 12, 29)
@@ -296,7 +338,7 @@ UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fr
 UIGradient_5.Rotation = 90
 UIGradient_5.Parent = Frame_3
 
-UICorner_13.Parent = Frame_3
+UICorner_15.Parent = Frame_3
 
 TextLabel_3.Parent = Frame_3
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -335,7 +377,7 @@ HitboxExpander.Text = "Hitbox Expander"
 HitboxExpander.TextColor3 = Color3.fromRGB(255, 255, 255)
 HitboxExpander.TextSize = 14.000
 
-UICorner_14.Parent = HitboxExpander
+UICorner_16.Parent = HitboxExpander
 
 TriggerBot.Name = "Trigger Bot"
 TriggerBot.Parent = Button_3
@@ -350,7 +392,7 @@ TriggerBot.Text = "Trigger Bot"
 TriggerBot.TextColor3 = Color3.fromRGB(255, 255, 255)
 TriggerBot.TextSize = 14.000
 
-UICorner_15.Parent = TriggerBot
+UICorner_17.Parent = TriggerBot
 
 UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(135, 147, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(19, 19, 103))}
 UIGradient_6.Rotation = -110
@@ -386,9 +428,77 @@ TextLabel_5.TextStrokeColor3 = Color3.fromRGB(86, 82, 190)
 TextLabel_5.TextStrokeTransparency = 0.000
 TextLabel_5.TextTransparency = 0.500
 
+troll.Name = "troll"
+troll.Parent = Kagemain
+troll.BackgroundColor3 = Color3.fromRGB(26, 27, 48)
+troll.BackgroundTransparency = 0.100
+troll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+troll.BorderSizePixel = 0
+troll.Position = UDim2.new(0.722089052, 0, -0.002067358, 0)
+troll.Size = UDim2.new(0, 189, 0, 460)
+
+UICorner_18.Parent = troll
+
+Frame_4.Parent = troll
+Frame_4.BackgroundColor3 = Color3.fromRGB(13, 12, 29)
+Frame_4.BackgroundTransparency = 0.600
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0, 0, -0.00159871473, 0)
+Frame_4.Size = UDim2.new(0, 188, 0, 32)
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(17, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(6, 0, 86))}
+UIGradient_7.Rotation = 90
+UIGradient_7.Parent = Frame_4
+
+UICorner_19.Parent = Frame_4
+
+TextLabel_6.Parent = Frame_4
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.142857224, 0, 0, 0)
+TextLabel_6.Size = UDim2.new(0, 133, 0, 32)
+TextLabel_6.Font = Enum.Font.Unknown
+TextLabel_6.Text = "Troll"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 14.000
+
+ImageLabel_4.Parent = Frame_4
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Position = UDim2.new(0.645221114, 0, 0.125, 0)
+ImageLabel_4.Size = UDim2.new(0, 28, 0, 28)
+ImageLabel_4.Image = "rbxassetid://95249934637608"
+
+Button_4.Name = "Button"
+Button_4.Parent = troll
+
+Fling.Name = "Fling"
+Fling.Parent = Button_4
+Fling.BackgroundColor3 = Color3.fromRGB(42, 41, 94)
+Fling.BackgroundTransparency = 0.700
+Fling.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fling.BorderSizePixel = 0
+Fling.Position = UDim2.new(0, 0, 0.0869565234, 0)
+Fling.Size = UDim2.new(0, 189, 0, 31)
+Fling.Font = Enum.Font.GothamMedium
+Fling.Text = "Fling"
+Fling.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fling.TextSize = 14.000
+
+UICorner_20.Parent = Fling
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(135, 147, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(19, 19, 103))}
+UIGradient_8.Rotation = -110
+UIGradient_8.Parent = troll
+
 -- Scripts:
 
-local function RBMVGPH_fake_script() -- fakespeedglitch.LocalScript 
+local function GZYTRA_fake_script() -- fakespeedglitch.LocalScript 
 	local script = Instance.new('LocalScript', fakespeedglitch)
 
 	local button = script.Parent
@@ -457,8 +567,8 @@ local function RBMVGPH_fake_script() -- fakespeedglitch.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RBMVGPH_fake_script)()
-local function NUXWFRE_fake_script() -- speedboost.LocalScript 
+coroutine.wrap(GZYTRA_fake_script)()
+local function QLBLGK_fake_script() -- speedboost.LocalScript 
 	local script = Instance.new('LocalScript', speedboost)
 
 	local button = script.Parent
@@ -500,8 +610,8 @@ local function NUXWFRE_fake_script() -- speedboost.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NUXWFRE_fake_script)()
-local function WQNLVRS_fake_script() -- infjump.LocalScript 
+coroutine.wrap(QLBLGK_fake_script)()
+local function SGCF_fake_script() -- infjump.LocalScript 
 	local script = Instance.new('LocalScript', infjump)
 
 	local button = script.Parent
@@ -541,8 +651,8 @@ local function WQNLVRS_fake_script() -- infjump.LocalScript
 	-- Изначально выключено
 	button.BackgroundColor3 = disabledColor
 end
-coroutine.wrap(WQNLVRS_fake_script)()
-local function RTPPJNN_fake_script() -- noclip.LocalScript 
+coroutine.wrap(SGCF_fake_script)()
+local function OXVGBR_fake_script() -- noclip.LocalScript 
 	local script = Instance.new('LocalScript', noclip)
 
 	local button = script.Parent
@@ -599,8 +709,148 @@ local function RTPPJNN_fake_script() -- noclip.LocalScript
 	-- Изначально выключаем Noclip
 	updateButtonColor()
 end
-coroutine.wrap(RTPPJNN_fake_script)()
-local function ORHYRKQ_fake_script() -- LocalPlayer.GUI DRAG 
+coroutine.wrap(OXVGBR_fake_script)()
+local function KPJEB_fake_script() -- fly.LocalScript 
+	local script = Instance.new('LocalScript', fly)
+
+	local button = script.Parent -- Твоя кнопка (TextButton)
+	local defaultFlySpeed = 1
+	local turnSpeed = 5
+	local toggleKey = Enum.KeyCode.F
+	
+	-- Цвета кнопки
+	local COLOR_ON = Color3.fromRGB(100, 98, 225)
+	local COLOR_OFF = Color3.fromRGB(42, 41, 94)
+	
+	-- Инициализация
+	local Player = game:GetService("Players").LocalPlayer
+	local Camera = workspace.CurrentCamera
+	local UserInputService = game:GetService("UserInputService")
+	local flying = false
+	local currentFlySpeed = defaultFlySpeed
+	local bodyGyro, bodyVelocity
+	local lastLookVector = Vector3.new(0, 0, 1)
+	
+	-- Функция для обновления цвета кнопки
+	local function updateButtonColor()
+		button.BackgroundColor3 = flying and COLOR_ON or COLOR_OFF
+	end
+	
+	-- Логика полёта
+	local function startFlying(speed)
+		if flying then return end
+	
+		currentFlySpeed = speed or defaultFlySpeed
+		local character = Player.Character or Player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+		humanoid.PlatformStand = true
+	
+		bodyGyro = Instance.new("BodyGyro")
+		bodyGyro.P = 10000
+		bodyGyro.maxTorque = Vector3.new(100000, 100000, 100000)
+		bodyGyro.cframe = CFrame.new(character.HumanoidRootPart.Position, character.HumanoidRootPart.Position + lastLookVector)
+		bodyGyro.Parent = character.HumanoidRootPart
+	
+		bodyVelocity = Instance.new("BodyVelocity")
+		bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+		bodyVelocity.maxForce = Vector3.new(10000, 10000, 10000)
+		bodyVelocity.Parent = character.HumanoidRootPart
+	
+		flying = true
+		updateButtonColor()
+	end
+	
+	local function stopFlying()
+		if not flying then return end
+	
+		local character = Player.Character
+		if character then
+			local humanoid = character:FindFirstChild("Humanoid")
+			if humanoid then
+				humanoid.PlatformStand = false
+			end
+	
+			if character:FindFirstChild("HumanoidRootPart") then
+				for _, v in pairs(character.HumanoidRootPart:GetChildren()) do
+					if v:IsA("BodyGyro") or v:IsA("BodyVelocity") then
+						v:Destroy()
+					end
+				end
+			end
+		end
+	
+		flying = false
+		updateButtonColor()
+	end
+	
+	local function updateFlight()
+		if not flying then return end
+	
+		local character = Player.Character
+		if not character or not character:FindFirstChild("HumanoidRootPart") then return end
+	
+		local rootPart = character.HumanoidRootPart
+		local cameraLookVector = Camera.CFrame.LookVector
+		lastLookVector = lastLookVector:Lerp(cameraLookVector, turnSpeed * task.wait())
+	
+		bodyGyro.cframe = CFrame.new(rootPart.Position, rootPart.Position + lastLookVector)
+	
+		local moveDirection = Vector3.new(0, 0, 0)
+		local speedMultiplier = currentFlySpeed * 50
+	
+		local forward = lastLookVector
+		local right = rootPart.CFrame.RightVector
+		local up = Vector3.new(0, 1, 0)
+	
+		forward = Vector3.new(forward.X, 0, forward.Z).Unit
+	
+		if UserInputService:IsKeyDown(Enum.KeyCode.W) then moveDirection += forward * speedMultiplier end
+		if UserInputService:IsKeyDown(Enum.KeyCode.S) then moveDirection -= forward * speedMultiplier end
+		if UserInputService:IsKeyDown(Enum.KeyCode.A) then moveDirection -= right * speedMultiplier end
+		if UserInputService:IsKeyDown(Enum.KeyCode.D) then moveDirection += right * speedMultiplier end
+		if UserInputService:IsKeyDown(Enum.KeyCode.Space) then moveDirection += up * speedMultiplier end
+		if UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) then moveDirection -= up * speedMultiplier end
+	
+		bodyVelocity.Velocity = moveDirection
+	end
+	
+	-- Переключение по клику на кнопку
+	button.MouseButton1Click:Connect(function()
+		if flying then
+			stopFlying()
+		else
+			startFlying(defaultFlySpeed)
+		end
+	end)
+	
+	-- Переключение по клавише F
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if not gameProcessed and input.KeyCode == toggleKey then
+			if flying then
+				stopFlying()
+			else
+				startFlying(defaultFlySpeed)
+			end
+		end
+	end)
+	
+	-- Основной цикл
+	game:GetService("RunService").Heartbeat:Connect(updateFlight)
+	
+	-- Очистка при смерти/выходе
+	Player.CharacterRemoving:Connect(stopFlying)
+	Player.CharacterAdded:Connect(function()
+		if flying then
+			task.wait(1)
+			startFlying(currentFlySpeed)
+		end
+	end)
+	
+	-- Изначальный цвет кнопки
+	updateButtonColor()
+end
+coroutine.wrap(KPJEB_fake_script)()
+local function YDPX_fake_script() -- LocalPlayer.GUI DRAG 
 	local script = Instance.new('LocalScript', LocalPlayer)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -657,8 +907,8 @@ local function ORHYRKQ_fake_script() -- LocalPlayer.GUI DRAG
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(ORHYRKQ_fake_script)()
-local function IDTYFE_fake_script() -- LocalPlayer.KeyToggle 
+coroutine.wrap(YDPX_fake_script)()
+local function DELG_fake_script() -- LocalPlayer.KeyToggle 
 	local script = Instance.new('LocalScript', LocalPlayer)
 
 	-- Theevilem
@@ -689,8 +939,8 @@ local function IDTYFE_fake_script() -- LocalPlayer.KeyToggle
 	
 	-- Enjoy and I hope this helps!
 end
-coroutine.wrap(IDTYFE_fake_script)()
-local function RNTSST_fake_script() -- esp.LocalScript 
+coroutine.wrap(DELG_fake_script)()
+local function USOV_fake_script() -- esp.LocalScript 
 	local script = Instance.new('LocalScript', esp)
 
 	local button = script.Parent -- TextButton
@@ -753,8 +1003,8 @@ local function RNTSST_fake_script() -- esp.LocalScript
 	-- Инициализация
 	updateButton()
 end
-coroutine.wrap(RNTSST_fake_script)()
-local function FBZY_fake_script() -- ScreenResolution.LocalScript 
+coroutine.wrap(USOV_fake_script)()
+local function CJAEFC_fake_script() -- ScreenResolution.LocalScript 
 	local script = Instance.new('LocalScript', ScreenResolution)
 
 	local button = script.Parent
@@ -791,8 +1041,8 @@ local function FBZY_fake_script() -- ScreenResolution.LocalScript
 	-- Изначально кнопка выключена
 	button.BackgroundColor3 = disabledColor
 end
-coroutine.wrap(FBZY_fake_script)()
-local function FTLH_fake_script() -- WalkESP.LocalScript 
+coroutine.wrap(CJAEFC_fake_script)()
+local function DDFZK_fake_script() -- WalkESP.LocalScript 
 	local script = Instance.new('LocalScript', WalkESP)
 
 	local button = script.Parent
@@ -804,22 +1054,22 @@ local function FTLH_fake_script() -- WalkESP.LocalScript
 	
 	-- Настройки круга
 	circleTemplate.Shape = Enum.PartType.Cylinder
-	circleTemplate.Size = Vector3.new(0.2, 5, 5) -- Тонкий, но широкий круг
+	circleTemplate.Size = Vector3.new(0.2, 10, 10) -- Тонкий, но широкий круг
 	circleTemplate.Anchored = true
 	circleTemplate.CanCollide = false
 	circleTemplate.Material = Enum.Material.Neon
 	circleTemplate.Color = Color3.fromRGB(100, 98, 225)
-	circleTemplate.Transparency = 0.5
+	circleTemplate.Transparency = 0.8
 	
 	-- Функция для создания и анимации круга
 	local function createCircle(position)
 		local circle = circleTemplate:Clone()
 		circle.Position = position + Vector3.new(0, 0.1, 0) -- Чуть выше поверхности
-		circle.Orientation = Vector3.new(90, 0, 0) -- Разворот горизонтально
+		circle.Orientation = Vector3.new(0, 0, 0) -- Разворот горизонтально
 		circle.Parent = workspace
 	
 		-- Анимация исчезновения через 3 секунды
-		task.delay(3, function()
+		task.delay(2, function()
 			for t = 0, 1, 0.1 do
 				circle.Transparency = 0.5 + (t * 0.5) -- Плавное увеличение прозрачности
 				task.wait(0.1)
@@ -878,8 +1128,69 @@ local function FTLH_fake_script() -- WalkESP.LocalScript
 	end
 	playerService.PlayerAdded:Connect(handlePlayerSteps)
 end
-coroutine.wrap(FTLH_fake_script)()
-local function ATJCT_fake_script() -- Visuals.Smooth GUI Dragging 
+coroutine.wrap(DDFZK_fake_script)()
+local function ATGSE_fake_script() -- XRay.LocalScript 
+	local script = Instance.new('LocalScript', XRay)
+
+	local button = script.Parent
+	local xrayEnabled = false
+	local partsToXray = {}
+	
+	-- Цвета кнопки
+	local enabledColor = Color3.fromRGB(100, 98, 225) -- Включен
+	local disabledColor = Color3.fromRGB(42, 41, 94)  -- Выключен
+	
+	-- Функция для применения XRay
+	local function applyXray()
+		for part, originalTransparency in pairs(partsToXray) do
+			if part:IsA("BasePart") and part.Parent ~= nil then
+				-- Если XRay выключен, возвращаем исходную прозрачность
+				if not xrayEnabled then
+					part.Transparency = originalTransparency
+				else
+					-- Если XRay включен, делаем парты полупрозрачными (кроме игроков)
+					if not part:IsDescendantOf(game.Players) then
+						part.Transparency = 0.5
+					end
+				end
+			else
+				partsToXray[part] = nil -- Удаляем несуществующие парты
+			end
+		end
+	end
+	
+	-- Функция для поиска и запоминания всех партов
+	local function scanParts()
+		partsToXray = {}
+		for _, part in ipairs(workspace:GetDescendants()) do
+			if part:IsA("BasePart") and not part:IsDescendantOf(game.Players) then
+				partsToXray[part] = part.Transparency
+			end
+		end
+	end
+	
+	-- Обработчик клика
+	button.MouseButton1Click:Connect(function()
+		xrayEnabled = not xrayEnabled
+		button.BackgroundColor3 = xrayEnabled and enabledColor or disabledColor
+	
+		if xrayEnabled then
+			scanParts() -- Сканируем парты при первом включении
+		end
+	
+		applyXray()
+	end)
+	
+	-- Постоянное обновление прозрачности (каждые 0.1 секунды)
+	while true do
+		if xrayEnabled then
+			applyXray()
+		end
+		task.wait(0.1)
+	end
+end
+coroutine.wrap(ATGSE_fake_script)()
+local function MKEM_fake_script() -- Visuals.Smooth GUI Dragging 
 	local script = Instance.new('LocalScript', Visuals)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -936,8 +1247,8 @@ local function ATJCT_fake_script() -- Visuals.Smooth GUI Dragging
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(ATJCT_fake_script)()
-local function BAGSIU_fake_script() -- Visuals.KeyToggle 
+coroutine.wrap(MKEM_fake_script)()
+local function MKROBM_fake_script() -- Visuals.KeyToggle 
 	local script = Instance.new('LocalScript', Visuals)
 
 	-- Theevilem
@@ -968,8 +1279,8 @@ local function BAGSIU_fake_script() -- Visuals.KeyToggle
 	
 	-- Enjoy and I hope this helps!
 end
-coroutine.wrap(BAGSIU_fake_script)()
-local function ZMKI_fake_script() -- HitboxExpander.LocalScript 
+coroutine.wrap(MKROBM_fake_script)()
+local function DNBIO_fake_script() -- HitboxExpander.LocalScript 
 	local script = Instance.new('LocalScript', HitboxExpander)
 
 	local button = script.Parent
@@ -1024,8 +1335,8 @@ local function ZMKI_fake_script() -- HitboxExpander.LocalScript
 	-- Применяем начальный цвет кнопки
 	button.BackgroundColor3 = disabledColor
 end
-coroutine.wrap(ZMKI_fake_script)()
-local function TOMECMT_fake_script() -- TriggerBot.LocalScript 
+coroutine.wrap(DNBIO_fake_script)()
+local function SCMTD_fake_script() -- TriggerBot.LocalScript 
 	local script = Instance.new('LocalScript', TriggerBot)
 
 	local button = script.Parent
@@ -1092,8 +1403,8 @@ local function TOMECMT_fake_script() -- TriggerBot.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TOMECMT_fake_script)()
-local function PWVD_fake_script() -- Combat.Smooth GUI Dragging 
+coroutine.wrap(SCMTD_fake_script)()
+local function NAQQFQ_fake_script() -- Combat.Smooth GUI Dragging 
 	local script = Instance.new('LocalScript', Combat)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1150,8 +1461,8 @@ local function PWVD_fake_script() -- Combat.Smooth GUI Dragging
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(PWVD_fake_script)()
-local function YCJTE_fake_script() -- Combat.KeyToggle 
+coroutine.wrap(NAQQFQ_fake_script)()
+local function SIPRR_fake_script() -- Combat.KeyToggle 
 	local script = Instance.new('LocalScript', Combat)
 
 	-- Theevilem
@@ -1182,8 +1493,8 @@ local function YCJTE_fake_script() -- Combat.KeyToggle
 	
 	-- Enjoy and I hope this helps!
 end
-coroutine.wrap(YCJTE_fake_script)()
-local function OREVUP_fake_script() -- Kagemain.LocalScript 
+coroutine.wrap(SIPRR_fake_script)()
+local function DLQZWQ_fake_script() -- Kagemain.LocalScript 
 	local script = Instance.new('LocalScript', Kagemain)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1192,8 +1503,8 @@ local function OREVUP_fake_script() -- Kagemain.LocalScript
 	
 	-- Настройки
 	blurEffect.Parent = game:GetService("Lighting")
-	blurEffect.Size = 0 -- Начальное значение (выключено)
-	local BLUR_SIZE = 25 -- Максимальный блюр
+	blurEffect.Size = 25 -- Начальное значение (выключено)
+	local BLUR_SIZE = 0 -- Максимальный блюр
 	local TWEEN_TIME = 1 -- Время плавности (1 секунда)
 	
 	local isBlurEnabled = false
@@ -1213,4 +1524,164 @@ local function OREVUP_fake_script() -- Kagemain.LocalScript
 		end
 	end)
 end
-coroutine.wrap(OREVUP_fake_script)()
+coroutine.wrap(DLQZWQ_fake_script)()
+local function LUWIIPL_fake_script() -- Fling.LocalScript 
+	local script = Instance.new('LocalScript', Fling)
+
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	local TweenService = game:GetService("TweenService")
+	
+	local toggleButton = script.Parent
+	local hiddenfling = false
+	local flingThread
+	
+	-- Цвета кнопки (RGB)
+	local COLOR_ON = Color3.fromRGB(100, 98, 225) -- Включено
+	local COLOR_OFF = Color3.fromRGB(42, 41, 94)  -- Выключено
+	
+	-- Проверка на античит (если нужно)
+	if not ReplicatedStorage:FindFirstChild("juisdfj0i32i0eidsuf0iok") then
+		local detection = Instance.new("Decal")
+		detection.Name = "juisdfj0i32i0eidsuf0iok"
+		detection.Parent = ReplicatedStorage
+	end
+	
+	-- Функция для плавного изменения цвета кнопки
+	local function setButtonColor(enabled)
+		local targetColor = enabled and COLOR_ON or COLOR_OFF
+		local tweenInfo = TweenInfo.new(0.2, Enum.EasingStyle.Linear)
+		local tween = TweenService:Create(toggleButton, tweenInfo, { BackgroundColor3 = targetColor })
+		tween:Play()
+	end
+	
+	-- Механика Fling
+	local function fling()
+		local lp = Players.LocalPlayer
+		local c, hrp, vel, movel = nil, nil, nil, 0.1
+	
+		while hiddenfling do
+			RunService.Heartbeat:Wait()
+			c = lp.Character
+			hrp = c and c:FindFirstChild("HumanoidRootPart")
+	
+			if hrp then
+				vel = hrp.Velocity
+				hrp.Velocity = vel * 10000 + Vector3.new(0, 10000, 0)
+				RunService.RenderStepped:Wait()
+				hrp.Velocity = vel
+				RunService.Stepped:Wait()
+				hrp.Velocity = vel + Vector3.new(0, movel, 0)
+				movel = -movel
+			end
+		end
+	end
+	
+	-- Обработчик клика
+	toggleButton.MouseButton1Click:Connect(function()
+		hiddenfling = not hiddenfling
+		setButtonColor(hiddenfling)
+	
+		if hiddenfling then
+			flingThread = coroutine.create(fling)
+			coroutine.resume(flingThread)
+		else
+			hiddenfling = false
+		end
+	end)
+	
+	-- Устанавливаем начальный цвет кнопки
+	setButtonColor(false)
+end
+coroutine.wrap(LUWIIPL_fake_script)()
+local function ARNIHQ_fake_script() -- troll.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', troll)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(ARNIHQ_fake_script)()
+local function HGVHFN_fake_script() -- troll.KeyToggle 
+	local script = Instance.new('LocalScript', troll)
+
+	-- Theevilem
+	-- Version: 4.0.0
+	-- Simple Script to Open Gui by Key Press on Keyboard
+	
+	-- INSTRUCTIONS:
+	-- 1. Place this script under any Gui Element with a "Visible" property you want to control via keypress.
+	-- 2. On line 13, change the "F" letter to whatever key you want to toggle your Gui element.
+	
+	local userInputService = game:GetService("UserInputService")
+	
+	local ui_Item = script.Parent
+	
+	local input_Key = Enum.KeyCode.LeftAlt
+	
+	userInputService.InputBegan:Connect(function(input)
+		if input.KeyCode == input_Key then
+			if ui_Item.Visible == false then
+				ui_Item.Visible = true
+			else
+				ui_Item.Visible = false
+			end
+		end
+		
+		return
+	end)
+	
+	-- Enjoy and I hope this helps!
+end
+coroutine.wrap(HGVHFN_fake_script)()
