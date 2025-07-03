@@ -1685,3 +1685,17 @@ local function HGVHFN_fake_script() -- troll.KeyToggle
 	-- Enjoy and I hope this helps!
 end
 coroutine.wrap(HGVHFN_fake_script)()
+
+local function callback(Text)
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Kage Client",
+	Text = "Good luck! Little hacker :)",
+	Icon = "https://create.roblox.com/store/asset/6877509154/Noob-Head",
+	Duration = 5,
+	Callback = NotificationBindable
+})
