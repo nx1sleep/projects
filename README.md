@@ -28,3 +28,8 @@ Trigger Bot`
 
 ### Troll
 `Fling`
+
+___
+# Main script
+
+### loadstring(game:HttpGet("https://raw.githubusercontent.com/nx1sleep/projects/refs/heads/main/kage_client.lua"))()
