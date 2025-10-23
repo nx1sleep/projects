@@ -1,5 +1,3 @@
-
-
 local h3_gui_exploit = Instance.new("ScreenGui")
 local TextLabel = Instance.new("TextLabel")
 local Frame = Instance.new("Frame")
@@ -10,9 +8,11 @@ local TextButton_4 = Instance.new("TextButton")
 local TextButton_5 = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
 
 h3_gui_exploit.Name = "h3_gui_exploit"
-h3_gui_exploit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+h3_gui_exploit.Parent = game:GetService("CoreGui")
 h3_gui_exploit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 TextLabel.Parent = h3_gui_exploit
@@ -118,19 +118,55 @@ TextButton_6.Text = "Bring all OFF"
 TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_6.TextSize = 14.000
 
-local function NWLB_script() 
+TextButton_7.Parent = Frame
+TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 167, 168)
+TextButton_7.BackgroundTransparency = 0.900
+TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.BorderSizePixel = 0
+TextButton_7.Position = UDim2.new(0, 0, 0.458923519, 0)
+TextButton_7.Size = UDim2.new(0, 214, 0, 27)
+TextButton_7.Font = Enum.Font.Arial
+TextButton_7.Text = "Time Changer OFF"
+TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.TextSize = 14.000
+
+TextButton_8.Parent = Frame
+TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 167, 168)
+TextButton_8.BackgroundTransparency = 0.900
+TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.BorderSizePixel = 0
+TextButton_8.Position = UDim2.new(0, 0, 0.535410762, 0)
+TextButton_8.Size = UDim2.new(0, 214, 0, 27)
+TextButton_8.Font = Enum.Font.Arial
+TextButton_8.Text = "Char all OFF"
+TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.TextSize = 14.000
+
+local function UPUGIC_script() 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent
 	local RequestCommand = game:GetService("ReplicatedStorage"):WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	local Players = game:GetService("Players")
 	
 	local isActive = false
 	local spamCoroutine = nil
 	
 	local function startTitleSpam()
 		while isActive do
-			RequestCommand:InvokeServer(";titleg random h3 team!")
-			wait(0.5)
+			local playersList = Players:GetPlayers()
+	
+			for _, player in ipairs(playersList) do
+				if not isActive then break end
+				if player ~= Players.LocalPlayer then
+					RequestCommand:InvokeServer(";titleg " .. player.Name .. " h3 team!")
+					wait(0.3)
+				end
+			end
+	
+			if isActive then
+				wait(1)
+			end
 		end
 	end
 	
@@ -146,23 +182,43 @@ local function NWLB_script()
 		end
 	end)
 end
-coroutine.wrap(NWLB_script)()
-local function NUSRDY_script() 
+coroutine.wrap(UPUGIC_script)()
+local function NCJAYPT_script() 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local button = script.Parent
 	local RequestCommand = game:GetService("ReplicatedStorage"):WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	local Players = game:GetService("Players")
 	
 	local isActive = false
 	local spamCoroutine = nil
 	
 	local function startFireSparkleSpam()
 		while isActive do
-			RequestCommand:InvokeServer(";fire random")
-			wait(0.3)
+			local playersList = Players:GetPlayers()
+	
+			for _, player in ipairs(playersList) do
+				if not isActive then break end
+				if player ~= Players.LocalPlayer then 
+					RequestCommand:InvokeServer(";fire " .. player.Name)
+					wait(0.2)
+				end
+			end
+	
 			if isActive then
-				RequestCommand:InvokeServer(";sparkles random")
-				wait(0.3)
+				wait(0.5)
+			end
+	
+			for _, player in ipairs(playersList) do
+				if not isActive then break end
+				if player ~= Players.LocalPlayer then
+					RequestCommand:InvokeServer(";sparkles " .. player.Name)
+					wait(0.2)
+				end
+			end
+	
+			if isActive then
+				wait(1)
 			end
 		end
 	end
@@ -179,8 +235,8 @@ local function NUSRDY_script()
 		end
 	end)
 end
-coroutine.wrap(NUSRDY_script)()
-local function QURQ_script() 
+coroutine.wrap(NCJAYPT_script)()
+local function OVIRE_script() 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local button = script.Parent
@@ -194,20 +250,32 @@ local function QURQ_script()
 		Request:InvokeServer(";gear me 99119158")
 	end)
 end
-coroutine.wrap(QURQ_script)()
-local function QYZBNS_script() 
+coroutine.wrap(OVIRE_script)()
+local function XDBHV_script() 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local button = script.Parent
 	local RequestCommand = game:GetService("ReplicatedStorage"):WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	local Players = game:GetService("Players")
 	
 	local isActive = false
 	local spamCoroutine = nil
 	
 	local function startTitleSpam()
 		while isActive do
-			RequestCommand:InvokeServer(";rename random h3 team coolest!")
-			wait(0.5)
+			local playersList = Players:GetPlayers()
+	
+			for _, player in ipairs(playersList) do
+				if not isActive then break end
+				if player ~= Players.LocalPlayer then
+					RequestCommand:InvokeServer(";name " .. player.Name .. " H3 TEAM COOLEST!")
+					wait(0.3)
+				end
+			end
+	
+			if isActive then
+				wait(1)
+			end
 		end
 	end
 	
@@ -223,77 +291,8 @@ local function QYZBNS_script()
 		end
 	end)
 end
-coroutine.wrap(QYZBNS_script)()
-local function RCYD_script() 
-	local script = Instance.new('LocalScript', TextButton_5)
-
-	local Players = game:GetService("Players")
-	local Player = Players.LocalPlayer
-	
-	local toggleButton = script.Parent
-	local isActive = false
-	local connection = nil
-	local lastExecuteTime = 0
-	local DELAY = 0.5
-	
-	local function sendTitleCommand()
-		local success, result = pcall(function()
-			local textBox = Player.PlayerGui.HDAdminInterface.CmdBar.SearchFrame.TextBox
-	
-			if textBox then
-				textBox:CaptureFocus()
-				textBox.Text = ";notice all JOIN IN H3 TEAM TODAY!"
-				wait(0.05)
-				textBox:ReleaseFocus(true)
-				wait(0.05)
-			end
-		end)
-	
-		if not success then
-			
-		end
-	end
-	
-	local function startSpam()
-		if connection then
-			connection:Disconnect()
-		end
-	
-		lastExecuteTime = tick() 
-	
-		connection = game:GetService("RunService").Heartbeat:Connect(function()
-			local currentTime = tick()
-	
-			if currentTime - lastExecuteTime >= DELAY then
-				sendTitleCommand()
-				lastExecuteTime = currentTime 
-			end
-		end)
-	end
-	
-	local function stopSpam()
-		if connection then
-			connection:Disconnect()
-			connection = nil
-		end
-	end
-	
-	toggleButton.MouseButton1Click:Connect(function()
-		isActive = not isActive
-	
-		if isActive then
-			toggleButton.Text = "Notice Spam: ON".."<font color=\"#FF4444\"><b>(HeadAdmin Request)</b></font>"
-			startSpam()
-		else
-			toggleButton.Text = "Notice Spam: OFF ".."<font color=\"#FF4444\"><b>(HeadAdmin Request)</b></font>"
-			stopSpam()
-		end
-	end)
-	
-	toggleButton.Text = "Notice Spam: OFF".."<font color=\"#FF4444\"><b>(HeadAdmin Request)</b></font>"
-end
-coroutine.wrap(RCYD_script)()
-local function UYDPYNJ_script() 
+coroutine.wrap(XDBHV_script)()
+local function TZJG_script() 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local button = script.Parent
@@ -321,20 +320,32 @@ local function UYDPYNJ_script()
 		end
 	end)
 end
-coroutine.wrap(UYDPYNJ_script)()
-local function LRLF_script() 
+coroutine.wrap(TZJG_script)()
+local function LGBQE_script() 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	local button = script.Parent
 	local RequestCommand = game:GetService("ReplicatedStorage"):WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	local Players = game:GetService("Players")
 	
 	local isActive = false
 	local spamCoroutine = nil
 	
 	local function startTitleSpam()
 		while isActive do
-			RequestCommand:InvokeServer(";bring random")
-			wait(0.5)
+			local playersList = Players:GetPlayers()
+	
+			for _, player in ipairs(playersList) do
+				if not isActive then break end
+				if player ~= Players.LocalPlayer then
+					RequestCommand:InvokeServer(";bring " .. player.Name .."")
+					wait(0.3)
+				end
+			end
+	
+			if isActive then
+				wait(1)
+			end
 		end
 	end
 	
@@ -350,8 +361,107 @@ local function LRLF_script()
 		end
 	end)
 end
-coroutine.wrap(LRLF_script)()
-local function QVVU_script() 
+coroutine.wrap(LGBQE_script)()
+local function YTLJX_script() 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	local button = script.Parent
+	local RequestCommand = game:GetService("ReplicatedStorage"):WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+	local isActive = false
+	local spamCoroutine = nil
+	
+	local timeSequence = {
+		{time = 3, wait = 2},
+		{time = 7, wait = 2},
+		{time = 10, wait = 2},
+		{time = 18, wait = 2},
+		{time = 24, wait = 2}
+	}
+	
+	local function startTimeCycle()
+		while isActive do
+			
+			for _, timeData in ipairs(timeSequence) do
+				if not isActive then break end 
+	
+				RequestCommand:InvokeServer(";time " .. timeData.time)
+	
+				wait(timeData.wait)
+			end
+	
+			if isActive then
+				wait(0.5) 
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		isActive = not isActive
+		if isActive then
+			button.Text = "Time Changer ON"
+			spamCoroutine = coroutine.create(startTimeCycle)
+			coroutine.resume(spamCoroutine)
+		else
+			button.Text = "Time Changer OFF"
+		end
+	end)
+end
+coroutine.wrap(YTLJX_script)()
+local function LNGYC_script() 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	local button = script.Parent
+	local RequestCommand = game:GetService("ReplicatedStorage"):WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	local Players = game:GetService("Players")
+	
+	local isActive = false
+	local spamCoroutine = nil
+	
+	local characterNames = {
+		"getonoutsidebruh3",
+		"getonoutsidebruh4", 
+		"getonoutsidebruh5",
+		"getonoutsidebruh6"
+	}
+	
+	local function startRandomCharSpam()
+		while isActive do
+			
+			local playersList = Players:GetPlayers()
+	
+			for _, player in ipairs(playersList) do
+				if not isActive then break end 
+	
+				local randomIndex = math.random(1, #characterNames)
+				local randomCharName = characterNames[randomIndex]
+	
+				RequestCommand:InvokeServer(";char " .. player.Name .. " " .. randomCharName)
+				wait(0.3) 
+			end
+	
+			if isActive then
+				wait(2) 
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		isActive = not isActive
+	
+		if isActive then
+			
+			button.Text = "Char all ON"
+			spamCoroutine = coroutine.create(startRandomCharSpam)
+			coroutine.resume(spamCoroutine)
+		else
+			
+			button.Text = "Char all OFF"
+		end
+	end)
+end
+coroutine.wrap(LNGYC_script)()
+local function PDPMB_script() 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local frame = script.Parent
@@ -359,4 +469,4 @@ local function QVVU_script()
 	frame.Selectable = true
 	frame.Draggable = true
 end
-coroutine.wrap(QVVU_script)()
+coroutine.wrap(PDPMB_script)()
