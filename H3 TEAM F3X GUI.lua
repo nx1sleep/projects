@@ -13,7 +13,7 @@ local TextButton_7 = Instance.new("TextButton")
 local TextButton_8 = Instance.new("TextButton")
 
 F3X_h3_gui_exploit.Name = "F3X_h3_gui_exploit"
-F3X_h3_gui_exploit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+F3X_h3_gui_exploit.Parent = game:GetService("CoreGui")
 F3X_h3_gui_exploit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 TextLabel.Parent = F3X_h3_gui_exploit
