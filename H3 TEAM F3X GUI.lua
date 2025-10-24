@@ -1,4 +1,4 @@
---H3 TEAM F3X GUI
+--H3 Team Coolest F3X Gui Exploit
 
 local F3X_h3_gui_exploit = Instance.new("ScreenGui")
 local TextLabel = Instance.new("TextLabel")
@@ -11,6 +11,9 @@ local TextButton_5 = Instance.new("TextButton")
 local TextButton_6 = Instance.new("TextButton")
 local TextButton_7 = Instance.new("TextButton")
 local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local TextButton_10 = Instance.new("TextButton")
+local TextButton_11 = Instance.new("TextButton")
 
 F3X_h3_gui_exploit.Name = "F3X_h3_gui_exploit"
 F3X_h3_gui_exploit.Parent = game:GetService("CoreGui")
@@ -114,7 +117,7 @@ TextButton_7.BorderSizePixel = 0
 TextButton_7.Position = UDim2.new(0, 0, 0.458000004, 0)
 TextButton_7.Size = UDim2.new(0, 214, 0, 27)
 TextButton_7.Font = Enum.Font.Arial
-TextButton_7.Text = "Bring All"
+TextButton_7.Text = "Crush R15 Characters"
 TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_7.TextSize = 14.000
 
@@ -130,7 +133,43 @@ TextButton_8.Text = "Part Art(Test) OFF"
 TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_8.TextSize = 14.000
 
-local function SJRTXB_script() 
+TextButton_9.Parent = Frame
+TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 167, 168)
+TextButton_9.BackgroundTransparency = 0.900
+TextButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.BorderSizePixel = 0
+TextButton_9.Position = UDim2.new(0, 0, 0.608141661, 0)
+TextButton_9.Size = UDim2.new(0, 214, 0, 27)
+TextButton_9.Font = Enum.Font.Arial
+TextButton_9.Text = "Colored Near Parts"
+TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_9.TextSize = 14.000
+
+TextButton_10.Parent = Frame
+TextButton_10.BackgroundColor3 = Color3.fromRGB(255, 167, 168)
+TextButton_10.BackgroundTransparency = 0.900
+TextButton_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_10.BorderSizePixel = 0
+TextButton_10.Position = UDim2.new(0, 0, 0.684628904, 0)
+TextButton_10.Size = UDim2.new(0, 214, 0, 27)
+TextButton_10.Font = Enum.Font.Arial
+TextButton_10.Text = "Bring All"
+TextButton_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_10.TextSize = 14.000
+
+TextButton_11.Parent = Frame
+TextButton_11.BackgroundColor3 = Color3.fromRGB(255, 167, 168)
+TextButton_11.BackgroundTransparency = 0.900
+TextButton_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_11.BorderSizePixel = 0
+TextButton_11.Position = UDim2.new(0, 0, 0.761116207, 0)
+TextButton_11.Size = UDim2.new(0, 214, 0, 27)
+TextButton_11.Font = Enum.Font.Arial
+TextButton_11.Text = "Skined Me R6"
+TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_11.TextSize = 14.000
+
+local function WJZNVTU_script() 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local function ChangeSkyOnClick()
@@ -273,8 +312,8 @@ local function SJRTXB_script()
 	
 	ChangeSkyOnClick()
 end
-coroutine.wrap(SJRTXB_script)()
-local function MGROFHT_script() 
+coroutine.wrap(WJZNVTU_script)()
+local function JEUOZX_script() 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -345,8 +384,8 @@ local function MGROFHT_script()
 		end
 	end)
 end
-coroutine.wrap(MGROFHT_script)()
-local function AHEYGR_script() 
+coroutine.wrap(JEUOZX_script)()
+local function FQGME_script() 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local button = script.Parent
@@ -425,8 +464,8 @@ local function AHEYGR_script()
 		end
 	end)
 end
-coroutine.wrap(AHEYGR_script)()
-local function AKHGYM_script() 
+coroutine.wrap(FQGME_script)()
+local function INCYQ_script() 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local button = script.Parent
@@ -513,8 +552,8 @@ local function AKHGYM_script()
 	end)
 
 end
-coroutine.wrap(AKHGYM_script)()
-local function YGZV_script() 
+coroutine.wrap(INCYQ_script)()
+local function OEGQK_script() 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local button = script.Parent
@@ -567,8 +606,8 @@ local function YGZV_script()
 		end
 	end)
 end
-coroutine.wrap(YGZV_script)()
-local function MDRWL_script() 
+coroutine.wrap(OEGQK_script)()
+local function YQXNJ_script() 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	local button = script.Parent
@@ -657,8 +696,8 @@ local function MDRWL_script()
 		end
 	end)
 end
-coroutine.wrap(MDRWL_script)()
-local function BZXPDK_script() 
+coroutine.wrap(YQXNJ_script)()
+local function LJFNTV_script() 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	local button = script.Parent
@@ -729,8 +768,8 @@ local function BZXPDK_script()
 		end
 	end)
 end
-coroutine.wrap(BZXPDK_script)()
-local function ISKL_script() 
+coroutine.wrap(LJFNTV_script)()
+local function HBPXDRV_script() 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	local button = script.Parent
@@ -899,8 +938,270 @@ local function ISKL_script()
 		end
 	end)
 end
-coroutine.wrap(ISKL_script)()
-local function BATID_script() 
+coroutine.wrap(HBPXDRV_script)()
+local function VKHJ_script() 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local tool
+	
+	for i, v in player:GetDescendants() do
+		if v.Name == "SyncAPI" then
+			tool = v.Parent
+		end
+	end
+	if not tool then
+		for i, v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	end
+	
+	local function getSyncAPI()
+		if tool and tool:FindFirstChild("SyncAPI") and tool.SyncAPI:FindFirstChild("ServerEndpoint") then
+			return tool.SyncAPI.ServerEndpoint
+		end
+		return nil
+	end
+	
+	local function sendSyncAPI(args)
+		local remote = getSyncAPI()
+		if remote then
+			remote:InvokeServer(unpack(args))
+		end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		local myCharacter = player.Character
+		if not myCharacter or not myCharacter:FindFirstChild("HumanoidRootPart") then
+			return
+		end
+	
+		local myPosition = myCharacter.HumanoidRootPart.Position
+		local radius = 20 
+	
+		for i, part in workspace:GetDescendants() do
+			if part:IsA("Part") then
+				local distance = (part.Position - myPosition).Magnitude
+	
+				if distance <= radius then
+					
+					sendSyncAPI({
+						"SyncColor",
+						{
+							{
+								["Part"] = part,
+								["Color"] = Color3.fromRGB(128, 0, 128) 
+							}
+						}
+					})
+	
+					sendSyncAPI({
+						"SyncMaterial",
+						{
+							{
+								["Part"] = part,
+								["Transparency"] = 0
+							}
+						}
+					})
+	
+					sendSyncAPI({
+						"CreateFires",
+						{
+							{
+								["Part"] = part
+							}
+						}
+					})
+	
+					sendSyncAPI({
+						"SyncFire",
+						{
+							{
+								["Part"] = part,
+								["Color"] = Color3.fromRGB(255, 105, 180) 
+							}
+						}
+					})
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(VKHJ_script)()
+local function ACOICUN_script() 
+	local script = Instance.new('LocalScript', TextButton_10)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local tool
+	
+	for i, v in player:GetDescendants() do
+		if v.Name == "SyncAPI" then
+			tool = v.Parent
+		end
+	end
+	if not tool then
+		for i, v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	end
+	
+	local function getSyncAPI()
+		if tool and tool:FindFirstChild("SyncAPI") and tool.SyncAPI:FindFirstChild("ServerEndpoint") then
+			return tool.SyncAPI.ServerEndpoint
+		end
+		return nil
+	end
+	
+	local function sendSyncAPI(args)
+		local remote = getSyncAPI()
+		if remote then
+			remote:InvokeServer(unpack(args))
+		end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		local myCharacter = player.Character
+		if not myCharacter or not myCharacter:FindFirstChild("HumanoidRootPart") then
+			return
+		end
+	
+		local myPosition = myCharacter.HumanoidRootPart.Position
+	
+		local otherPlayers = {}
+		for i, plr in game.Players:GetPlayers() do
+			if plr ~= player and plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") then
+				table.insert(otherPlayers, plr)
+			end
+		end
+	
+		for i, targetPlayer in ipairs(otherPlayers) do
+			local targetCharacter = targetPlayer.Character
+			local targetHRP = targetCharacter:FindFirstChild("HumanoidRootPart")
+	
+			if targetHRP then
+				
+				local oldPosition = targetHRP.Position
+				local newPosition = myPosition
+				local offset = newPosition - oldPosition
+	
+				local partsToMove = {}
+	
+				table.insert(partsToMove, {
+					["Part"] = targetHRP,
+					["CFrame"] = CFrame.new(newPosition) * (targetHRP.CFrame - targetHRP.CFrame.p)
+				})
+	
+				for i, part in targetCharacter:GetDescendants() do
+					if part:IsA("BasePart") and part ~= targetHRP then
+						local newPartPosition = part.Position + offset
+						table.insert(partsToMove, {
+							["Part"] = part,
+							["CFrame"] = CFrame.new(newPartPosition) * (part.CFrame - part.CFrame.p)
+						})
+					end
+				end
+	
+				if #partsToMove > 0 then
+					sendSyncAPI({
+						"SyncMove",
+						partsToMove
+					})
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(ACOICUN_script)()
+local function UIJSVLL_script() 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local tool
+	
+	for i, v in player:GetDescendants() do
+		if v.Name == "SyncAPI" then
+			tool = v.Parent
+		end
+	end
+	if not tool then
+		for i, v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	end
+	
+	local function getSyncAPI()
+		if tool and tool:FindFirstChild("SyncAPI") and tool.SyncAPI:FindFirstChild("ServerEndpoint") then
+			return tool.SyncAPI.ServerEndpoint
+		end
+		return nil
+	end
+	
+	local function sendSyncAPI(args)
+		local remote = getSyncAPI()
+		if remote then
+			remote:InvokeServer(unpack(args))
+		end
+	end
+	
+	local bodyColors = {
+		Torso = Color3.fromRGB(75, 0, 130),     
+		Head = Color3.fromRGB(64, 64, 64),      
+		["Left Arm"] = Color3.fromRGB(255, 255, 255), 
+		["Right Arm"] = Color3.fromRGB(255, 255, 255), 
+		["Left Leg"] = Color3.fromRGB(128, 0, 128),   
+		["Right Leg"] = Color3.fromRGB(128, 0, 128)   
+	}
+	
+	button.MouseButton1Click:Connect(function()
+		local myCharacter = player.Character
+		if not myCharacter then
+			return
+		end
+	
+		for partName, color in pairs(bodyColors) do
+			local part = myCharacter:FindFirstChild(partName)
+			if part and part:IsA("BasePart") then
+				
+				if partName ~= "Head" then
+					sendSyncAPI({
+						"SyncMaterial",
+						{
+							{
+								["Part"] = part,
+								["Material"] = Enum.Material.SmoothPlastic
+							}
+						}
+					})
+				end
+	
+				sendSyncAPI({
+					"SyncColor",
+					{
+						{
+							["Part"] = part,
+							["Color"] = color
+						}
+					}
+				})
+			end
+		end
+	end)
+end
+coroutine.wrap(UIJSVLL_script)()
+local function ICGIAQA_script() 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local frame = script.Parent
@@ -908,4 +1209,4 @@ local function BATID_script()
 	frame.Selectable = true
 	frame.Draggable = true
 end
-coroutine.wrap(BATID_script)()
+coroutine.wrap(ICGIAQA_script)()
