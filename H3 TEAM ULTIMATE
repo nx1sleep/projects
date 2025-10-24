@@ -28,7 +28,7 @@ local TextLabel_5 = Instance.new("TextLabel")
 --Properties:
 
 F3X_h3_gui_exploit.Name = "F3X_h3_gui_exploit"
-F3X_h3_gui_exploit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+F3X_h3_gui_exploit.Parent = game:GetService("CoreGui")
 F3X_h3_gui_exploit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 TextLabel.Parent = F3X_h3_gui_exploit
@@ -110,7 +110,7 @@ TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_5.TextSize = 14.000
 
 h3_gui_exploit.Name = "h3_gui_exploit"
-h3_gui_exploit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+h3_gui_exploit.Parent = game:GetService("CoreGui")
 h3_gui_exploit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 TextLabel_2.Parent = h3_gui_exploit
